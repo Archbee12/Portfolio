@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <script defer src="scripts/script.js"></script>
+  <script defer src="scripts/script.js" type="module"></script>
 </head>
 <body>
   <header>
@@ -27,7 +27,14 @@
 
   </header>
   <main>
+    <div class="stars"></div>
+
     <section class="hero">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
       <div class="hero-content">
         <p>Deborah Okon </p>
         <div class="typing-container"><h1 class="intro">Front End Developer</h1></div>
@@ -37,7 +44,13 @@
     </section>
     <section id="about" class="section-fade">
       <div class="aboutme">
-        <h1>About Me</h1>
+        <h1 class="animated-heading">
+          About Me
+          <span class="line-container">
+            <span class="rolling-ball"></span>
+            <span class="bottom-line"></span>
+          </span>
+        </h1>
         <div class="img">
           <img src="images/my-image.jpg" alt="Profile Picture">
         </div>
@@ -52,10 +65,10 @@
     </section>
     <section id="projects">
       <div class="project-container">
-        <h1 >Projects</h1>
+        <h1>Projects</h1>
         <p>Each is a unique piece of development</p>
         <div class="cards">
-          <div class="card">
+          <!-- <div class="card">
             <div class="project-img">
               <img src="images/project1.webp" alt="User Login GUI">
             </div>
@@ -116,12 +129,17 @@
               </div>
               <div class="project-links">
                 <a href="https://archbee12.github.io/wdd231/final/index.html">visit site</a>
-                <!-- <a href="https://github.com/Archbee12/wdd231/tree/main/final">source code</a> -->
+                <a href="https://github.com/Archbee12/wdd231/tree/main/final">source code</a>
               </div>
             </div>
             
-          </div>
+          </div> -->
+
         </div>
+        <dialog id="projectModal" class="project-modal">
+          <button class="close-btn">×</button>
+          <img id="modalImage" src="" alt="Project Screenshot">
+        </dialog>
       </div>
     </section>
   </main>

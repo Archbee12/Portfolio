@@ -1,0 +1,44 @@
+[
+  {
+    "title": "User Login GUI",
+    "description": "A Login Graphical User-Interface built with Python using Tkinter GUI",
+    "image": "images/project1.webp",
+    "alt": "User Login GUI",
+    "tech": ["Python"],
+    "links": {
+      "site": "https://www.youtube.com/watch?v=OSo4dyVA6-k",
+      "source": "https://github.com/Archbee12/cse111/blob/main/Week13_Project/tkinter-mini-challenge.py"
+    }
+  },
+  {
+    "title": "Chamber of Commerce",
+    "description": "My WDD231 project on the Chamber of Commerce website. A fully responsive website with weather API",
+    "image": "images/project2.webp",
+    "alt": "Chamber of Commerce",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "links": {
+      "site": "https://archbee12.github.io/wdd231/chamber/index.html",
+      "source": "https://github.com/Archbee12/wdd231"
+    }
+  },
+  {
+    "title": "BYUI Cloned Student Portal",
+    "description": "A project to enhance the class-schedule to be more user-friendly, allowing students to add/drop classes",
+    "image": "images/project3.webp",
+    "alt": "BYUI Cloned Student Portal",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "links": {
+      "site": "https://archbee12.github.io/wdd231/final/index.html"
+    }
+  },
+  {
+    "title": "Recipe Finder",
+    "description": "Food recipe finder and a food nutrition benefit lookup. Makes it easier to cook with food ingredients and instructions",
+    "image": "images/project4.webp",
+    "alt": "Recipe Finder",
+    "tech": ["HTML", "CSS", "JavaScript ES6+"],
+    "links": {
+      "site": "https://archbee12.github.io/wdd330-recipes/index.html"
+    }
+  }
+]
