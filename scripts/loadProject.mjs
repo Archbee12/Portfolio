@@ -1,17 +1,28 @@
 import { animateCards, setupProjectModal } from './utils.mjs';
 
-
 export const loadProjects = async () => {
   try {
     const res = await fetch('json/projects.json');
     const projects = await res.json();
 
-    const container = document.querySelector('.cards');
-    container.innerHTML = '';
+    // Show newest projects first
+    const sortedProjects = projects.reverse();
 
-    projects.forEach(({ title, description, image, alt, tech, links }, index) => {
+    const container = document.querySelector('.cards');
+    container.innerHTML = ''; // Clear existing cards
+
+    // Check screen width to apply left/right layout
+    const isMediumScreen = window.innerWidth >= 640 && window.innerWidth <= 720;
+
+    sortedProjects.forEach(({ title, description, image, alt, tech, links }, index) => {
       const card = document.createElement('div');
-      card.className = `card ${index % 2 === 0 ? 'left' : 'right'}`;
+
+      // Only alternate left/right on medium screens
+      if (isMediumScreen) {
+        card.className = `card ${index % 2 === 0 ? 'left' : 'right'}`;
+      } else {
+        card.className = 'card'; // Image on top for other screen sizes
+      }
 
       const techList = tech.map(item => `<li>${item}</li>`).join('');
       const siteLink = links.site ? `<a href="${links.site}" target="_blank">visit site</a>` : '';
@@ -38,8 +49,6 @@ export const loadProjects = async () => {
     });
 
     setupProjectModal();
-
-
     animateCards();
 
   } catch (error) {

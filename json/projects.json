@@ -40,5 +40,26 @@
     "links": {
       "site": "https://archbee12.github.io/wdd330-recipes/index.html"
     }
+  },
+  {
+    "title": "RESTful API – Team Collaboration",
+    "description": "A team-built RESTful API for managing application data using Node.js, Express, and MongoDB. Implemented CRUD endpoints, routing, and database integration following REST architecture principles.",
+    "image": "images/project5.webp",
+    "alt": "RESTful API built with Node.js Express and MongoDB",
+    "tech": ["Node.js", "Express", "MongoDB"],
+    "links": {
+      "source": "https://github.com/TysonPace777/cse341-team12-final-project"
+    }
+  }, 
+  {
+    "title": "Handcrafted Haven",
+    "description": "A full-stack e-commerce web application for discovering and purchasing handmade products. Built with modern web technologies featuring product browsing, shopping cart functionality, and dynamic data handling.",
+    "image": "images/project6.webp",
+    "alt": "Handcrafted Haven full stack ecommerce website",
+    "tech": ["HTML", "CSS", "JavaScript", "Node.js"],
+    "links": {
+      "site": "YOUR_DEPLOYED_SITE_LINK",
+      "source": "YOUR_GITHUB_REPO_LINK"
+    }
   }
 ]

@@ -6,11 +6,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles/styles.css">
   <script defer src="scripts/script.js" type="module"></script>
+  <script defer src="scripts/contact.mjs" type="module"></script>
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="\"> Deborah Okon </a>
+      <a href="/"> Deborah Okon </a>
     </div>
     <nav>
       <ul class="nav-links">
@@ -42,7 +43,7 @@
       </div>
       <p class="scroll-indicator" id="scrollBtn">↓ scroll</p>  
     </section>
-    <section id="about" class="section-fade">
+    <section id="#about" class="section-fade">
       <div class="aboutme">
         <h1 class="animated-heading">
           About Me
@@ -68,78 +69,35 @@
         <h1>Projects</h1>
         <p>Each is a unique piece of development</p>
         <div class="cards">
-          <!-- <div class="card">
-            <div class="project-img">
-              <img src="images/project1.webp" alt="User Login GUI">
-            </div>
-            <div class="project-desc">
-              <div>
-                <h3>User Login GUI</h3>
-                <p>A Login Graphical User-Interface built with Python using Tkinter GUI</p>
-              </div>
-              <div class="project-apps">
-                <ul>
-                  <li>Python</li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=OSo4dyVA6-k">visit site</a>
-                <a href="https://github.com/Archbee12/cse111/blob/main/Week13_Project/tkinter-mini-challenge.py">source code</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="project-img">
-              <img src="images/project2.webp" alt="User Login GUI">
-            </div>
-            <div class="project-desc">
-              <div>
-                <h3>Chamber of Commerce</h3>
-                <p>My WDD231 project on the Chamber of Commerce website. A fully responsive website with weather API</p>
-              </div>
-              <div class="project-apps">
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a href="https://archbee12.github.io/wdd231/chamber/index.html">visit site</a>
-                <a href="https://github.com/Archbee12/wdd231">source code</a>
-              </div>
-            </div>
-            
-          </div>
-          <div class="card">
-            <div class="project-img">
-              <img src="images/project4.png" alt="User Login GUI">
-            </div>
-            <div class="project-desc">
-              <div>
-                <h3>BYUI Cloned Student Portal</h3>
-                <p>A project to enhance the class-schedule to be more user-friendly, allowing students to add/drop classes</p>
-              </div>
-              <div class="project-apps">
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <div class="project-links">
-                <a href="https://archbee12.github.io/wdd231/final/index.html">visit site</a>
-                <a href="https://github.com/Archbee12/wdd231/tree/main/final">source code</a>
-              </div>
-            </div>
-            
-          </div> -->
-
         </div>
         <dialog id="projectModal" class="project-modal">
           <button class="close-btn">×</button>
           <img id="modalImage" src="" alt="Project Screenshot">
         </dialog>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section-fade">
+      <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out for collaborations, questions, or just a friendly hello.</p>
+
+        <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." rows="6" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
