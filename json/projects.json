@@ -44,7 +44,7 @@
   {
     "title": "RESTful API – Team Collaboration",
     "description": "A team-built RESTful API for managing application data using Node.js, Express, and MongoDB. Implemented CRUD endpoints, routing, and database integration following REST architecture principles.",
-    "image": "images/project5.webp",
+    "image": "images/project5.png",
     "alt": "RESTful API built with Node.js Express and MongoDB",
     "tech": ["Node.js", "Express", "MongoDB"],
     "links": {
@@ -54,12 +54,12 @@
   {
     "title": "Handcrafted Haven",
     "description": "A full-stack e-commerce web application for discovering and purchasing handmade products. Built with modern web technologies featuring product browsing, shopping cart functionality, and dynamic data handling.",
-    "image": "images/project6.webp",
+    "image": "images/project6.png",
     "alt": "Handcrafted Haven full stack ecommerce website",
     "tech": ["HTML", "CSS", "JavaScript", "Node.js"],
     "links": {
-      "site": "YOUR_DEPLOYED_SITE_LINK",
-      "source": "YOUR_GITHUB_REPO_LINK"
+      "site": "https://wdd430-team11-project-n53f-dct9lsh5l.vercel.app/",
+      "source": "https://github.com/Archbee12/wdd430-team11-project/tree/main/team11handcrafted"
     }
   }
 ]
