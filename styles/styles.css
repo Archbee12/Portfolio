@@ -324,6 +324,10 @@ p.scroll-indicator {
   animation: fadeUp 1s ease-out forwards;
 }
 
+.aboutme p {
+  text-align: justify;
+}
+
 /* The fade and slide-up keyframes */
 @keyframes fadeUp {
   to {
