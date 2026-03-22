@@ -11,6 +11,17 @@
     }
   },
   {
+    "title": "Youtube Page",
+    "description": "A static youtube website. My first HTML project",
+    "image": "images/project.png",
+    "alt": "Youtube clone",
+    "tech": ["HTML", "CSS"],
+    "links": {
+      "site": "https://archbee12.github.io/Youtube-clone",
+      "source": "https://github.com/Archbee12/Youtube-clone"
+    }
+  },
+  {
     "title": "Chamber of Commerce",
     "description": "My WDD231 project on the Chamber of Commerce website. A fully responsive website with weather API",
     "image": "images/project2.webp",

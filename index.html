@@ -12,13 +12,15 @@
 <body>
   <header>
     <div class="logo">
-      <a href="/"> Deborah Okon </a>
+      <a href="/"> 
+        <img src="images/logo.png" alt="logo"> 
+      </a>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#about" class="grey" target="_blank">About</a></li>
-        <li><a href="#projects" target="_blank">Projects</a></li>
-        <li><a class="grey" href="contact.html">Contact Me</a></li>
+        <li><a href="#about" class="grey">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="grey" href="#contact">Contact Me</a></li>
       </ul>
     </nav>
     <div class="hamburger">
@@ -31,6 +33,7 @@
   <main>
     <div class="stars"></div>
 
+    <!-- HERO -->
     <section class="hero">
       <div class="shooting-star"></div>
       <div class="shooting-star"></div>
@@ -44,28 +47,73 @@
       </div>
       <p class="scroll-indicator" id="scrollBtn">↓ scroll</p>  
     </section>
-    <section id="#about" class="section-fade">
-      <div class="aboutme">
-        <h1 class="animated-heading">
-          About Me
-          <span class="line-container">
-            <span class="rolling-ball"></span>
-            <span class="bottom-line"></span>
-          </span>
-        </h1>
-        <div class="img">
-          <img src="images/my-image.jpg" alt="Profile Picture">
-        </div>
-        <p>Hi, I'm Deborah Sarah Okon, a Full-Stack Developer passionate about building dynamic and responsive web applications. I specialize in JavaScript, Node.js, React, and Next.js, creating seamless front-end experiences with robust back-end functionality.</p>
+    
+    <section id="about" class="section-fade">
+  <div class="aboutme container">
 
-        <p>I’m currently pursuing a degree in Software Development at Brigham Young University–Idaho, sharpening my skills in full-stack architecture, APIs, and modern web technologies. Each project is an opportunity to craft efficient, maintainable, and engaging digital experiences.</p>
+    <h2 class="animated-heading">About Me</h2>
 
-        <p>Whether it’s a polished UI, a dynamic API, or a full-stack application, I aim to build code that makes an impact. Let’s create something amazing together..</p>
+    <div class="about-content">
+      <div class="img">
+        <img src="images/my-image.jpg" alt="Profile Picture">
       </div>
-    </section>
+
+      <div class="about-text">
+        <p>
+          Hi, I'm <strong>Deborah Sarah Okon</strong>, a Full-Stack Developer passionate about building dynamic and responsive web applications. I specialize in JavaScript, Node.js, React, and Next.js, creating seamless front-end experiences with robust back-end functionality.
+        </p>
+
+        <p>
+          I’m currently pursuing a degree in Software Development at Brigham Young University–Idaho, sharpening my skills in full-stack architecture, APIs, and modern web technologies.
+        </p>
+
+        <p>
+          I focus on writing clean, maintainable code and building digital experiences that are both functional and visually engaging.
+        </p>
+      </div>
+    </div>
+
+    <!-- 🔥 SKILLS SECTION INSIDE ABOUT -->
+    <div class="skills-section">
+
+      <h3 class="skills-title">Core Skills</h3>
+
+      <div class="skills-container">
+
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <p>Node.js, Express.js, REST APIs</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Frameworks</h4>
+          <p>React, Next.js</p>
+        </div>
+
+        <div class="skill-card">
+          <h4>Tools</h4>
+          <p>Git, GitHub, VS Code, Chrome DevTools</p>
+        </div>
+
+        <!-- <div class="skill-card">
+          <h4>Currently Learning</h4>
+          <p>Advanced Backend Systems, API Optimization</p>
+        </div> -->
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <section id="projects">
       <div class="project-container">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         <p>Each is a unique piece of development</p>
         <div class="cards">
         </div>
@@ -79,7 +127,7 @@
     <!-- Contact Form Section -->
     <section id="contact" class="section-fade">
       <div class="contact-container">
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
         <p>Feel free to reach out for collaborations, questions, or just a friendly hello.</p>
 
         <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">

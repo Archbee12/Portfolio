@@ -3,13 +3,14 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 	padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #ffffff;
 	/* background-color: #0f172a; */
 	min-height: 100vh;
   background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+  max-width: 1600px;
 }
 
 header {
@@ -17,13 +18,20 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1rem;
+	padding: 1rem;
 }
 
-.logo a {
-	text-decoration: none;
-	color: #93c5fd;
-	text-transform: uppercase;
+.logo img {
+  height: 40px;   /* controls size */
+  width: auto;
+  object-fit: fit;
+  /* margin-top: 10px; */
+}
+
+/* Optional hover effect */
+.logo img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
 nav ul {
@@ -31,6 +39,7 @@ nav ul {
 	list-style-type: none;
 	justify-content: flex-end;
 	flex: 1 0 auto;
+  gap: 2rem;
 }
 
 nav ul li a {
@@ -38,7 +47,8 @@ nav ul li a {
 	text-decoration: none;
 	color: var(--accent-color);
 	padding: .25rem .5rem;
-	font-size: .75rem;
+	font-size: 1.2rem;
+  color: #93C5FD;
 	position: relative;
 }
 
@@ -80,7 +90,7 @@ nav a.active {
 .hamburger span {
 	height: 2px;
 	width: 100%;
-	background-color: white;
+	background-color: #93C5FD;
 	border-radius: 25px;
 	position: absolute;
 	transform: translate(-50%, 50%);
@@ -213,9 +223,10 @@ section {
   animation: twinkle 6s infinite linear reverse;
 }
 
-section h1 {
+section h2 {
   font-size: 2rem;
   position: relative;
+  color: #94a3b8;
 }
 
 .hero {
@@ -350,6 +361,48 @@ p.scroll-indicator {
 	min-height: 100vh;
 }
 
+/* SKILLS */
+.skills-section {
+  margin-top: 50px;
+}
+
+.skills-title {
+  color: #93C5FD;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* GRID instead of flex (better layout) */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: #1b2735;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(147, 197, 253, 0.15);
+  transition: all 0.3s ease;
+}
+
+.skill-card h4 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* 🔥 HOVER GLOW EFFECT */
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(147, 197, 253, 0.4);
+  border-color: rgba(147, 197, 253, 0.4);
+}
 
 @media (max-width: 340px) {
 	header {
@@ -357,23 +410,7 @@ p.scroll-indicator {
 		flex-direction: column;
 		position: relative;
 	}
-
 }
-
-/* .cards {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	border-radius: 8px;
-	overflow: hidden;
-	margin-bottom: 1rem;
-} */
 
 .cards {
   display: grid;
@@ -396,10 +433,12 @@ p.scroll-indicator {
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow:
+  transform: translateY(-6px);
+  /* box-shadow:
     0 10px 30px rgba(0,0,0,0.6),
-    0 0 20px rgba(0,255,204,0.15);
+    0 0 20px rgba(0,255,204,0.15); */
+    box-shadow: 0 0 20px rgba(147, 197, 253, 0.4);
+  border-color: rgba(147, 197, 253, 0.4);
 }
 
 .project-img {
@@ -594,7 +633,7 @@ section#contact {
 
 .contact-container {
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 2rem 1.5rem;
   padding: 2rem;
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.08);
@@ -684,18 +723,19 @@ section#contact {
 
   .hamburger {
     display: flex;
-    z-index: 1001;
+    z-index: 1;
   }
   
   nav {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 0;
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #090a0f;
+    background-color: #0f172a98;
+    z-index: 100;
     
     /* display: none;
     flex-direction: column;
@@ -710,7 +750,7 @@ section#contact {
   .nav-links {
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 0;
     list-style: none;
   }
 
