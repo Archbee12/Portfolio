@@ -78,7 +78,7 @@
     "description": "Built a full-stack e-commerce application using Next.js and TypeScript with PostgreSQL (Neon). Implemented role-based authentication (buyer, artisan) with session cookies, secure password hashing using bcrypt, and server-side data handling for product and cart operations.",
     "image": "images/project6.png",
     "alt": "Handcrafted Haven full stack ecommerce website",
-    "tech": ["HTML", "CSS", "JavaScript", "Node.js"],
+    "tech": ["HTML", "CSS", "TypeScript", "Next.js", "React"],
     "links": {
       "site": "https://wdd430-team11-project-n53f-dct9lsh5l.vercel.app/",
       "source": "https://github.com/Archbee12/wdd430-team11-project/tree/main/team11handcrafted"
