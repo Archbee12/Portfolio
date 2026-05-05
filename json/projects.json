@@ -53,18 +53,29 @@
     }
   },
   {
+    "title": "SleepOutside – E-commerce Web Application",
+    "description": "Debugged and maintained a team-built e-commerce web application by fixing product category filtering, resolving cart state issues, and improving product data rendering across pages. Implemented cross-page search functionality, handled merge conflicts, and ensured consistent product retrieval and UI updates.",
+    "image": "images/sleepoutside.png",
+    "alt": "SleepOutside e-commerce web application",
+    "tech": ["HTML", "CSS", "JavaScript", "Git", "Node.js"],
+    "links": {
+      "site": "https://wdd330-sleepoutside-team08.netlify.app/",
+      "source": "https://github.com/Archbee12/wdd330-sleepoutside-team08"
+    }
+  },
+  {
     "title": "RESTful API – Team Collaboration",
-    "description": "A team-built RESTful API for managing application data using Node.js, Express, and MongoDB. Implemented CRUD endpoints, routing, and database integration following REST architecture principles.",
+    "description": "Built a RESTful API using Node.js and Express with JWT authentication and MongoDB. Implemented secure user login, protected routes, and error handling middleware. Designed scalable structure using MVC architecture.",
     "image": "images/project5.png",
     "alt": "RESTful API built with Node.js Express and MongoDB",
     "tech": ["Node.js", "Express", "MongoDB"],
     "links": {
       "source": "https://github.com/TysonPace777/cse341-team12-final-project"
     }
-  }, 
+  },
   {
     "title": "Handcrafted Haven",
-    "description": "A full-stack e-commerce web application for discovering and purchasing handmade products. Built with modern web technologies featuring product browsing, shopping cart functionality, and dynamic data handling.",
+    "description": "Built a full-stack e-commerce application using Next.js and TypeScript with PostgreSQL (Neon). Implemented role-based authentication (buyer, artisan) with session cookies, secure password hashing using bcrypt, and server-side data handling for product and cart operations.",
     "image": "images/project6.png",
     "alt": "Handcrafted Haven full stack ecommerce website",
     "tech": ["HTML", "CSS", "JavaScript", "Node.js"],
